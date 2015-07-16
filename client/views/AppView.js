@@ -11,13 +11,6 @@ var AppView = Backbone.View.extend({
       this.playerView.setSong(model.get('currentSong'));
     }, this);
 
-    this.model.on('ended:currentSong', function() {
-      console.log(this);
-      //get next song, which is top of songQueue
-      //set currentSong to new top of songQueue
-
-    }, this);
-
   },
 
   render: function(){
